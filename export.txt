@@ -4,5 +4,6 @@ False
 Diablo III
 0
 None
-Action-adventure,First-person shooter,RPG,Real-time strategy,Sandbox,Simulation,Survival game
+Action-adventure, First-person shooter, RPG, Real-time strategy, Sandbox, Simulation, Survival game
 1999
+Age of Empires, Command & Conquer, Counter-Strike, Counter-Strike: Condition Zero, Crysis, Diablo II, Diablo III, Doom 3, EverQuest, Garry's Mod, Guild Wars, Half-Life, Half-Life 2, Minecraft, Populous, StarCraft, StarCraft II: Wings of Liberty, Terraria, The Sims, The Sims 2, The Sims 3, Warcraft III: Reign of Chaos, Warhammer 40,000: Dawn of War (including expansions), World of Warcraft

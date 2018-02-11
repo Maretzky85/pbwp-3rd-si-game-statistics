@@ -10,6 +10,7 @@ def ask_q():
     5 - Get genres in file\n\
     6 - Top sold fps\n\
     7 - Is there a game from a given year?\n\
+    8 - Sorted name list\n\
     Any other - quit\n")
     return file_name, var
 
@@ -54,5 +55,7 @@ def main():
         elif choise == 7:
             year = input("What Year?")
             print(decide(file_name, year))
+        elif choise == 8:
+            print(", \n".join(sort_abc("game_stat.txt")))
 
 main()
