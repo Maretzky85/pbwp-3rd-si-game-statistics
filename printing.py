@@ -2,7 +2,15 @@ from reports import *
 
 def ask_q():
     file_name="game_stat.txt"
-    var=input("What do You need?\n0 - Change File name(default:game_stat.txt)\n1 - Count games in file\n2 - Latest game in file\n3 - Count games by Genre\n4 - Title line number in file\n5 - Get genres in file\n6 - Top sold fps\nAny other - quit\n")
+    var=input("What do You need?\n0 - Change File name(default:game_stat.txt)\n\
+    1 - Count games in file\n\
+    2 - Latest game in file\n\
+    3 - Count games by Genre\n\
+    4 - Title line number in file\n\
+    5 - Get genres in file\n\
+    6 - Top sold fps\n\
+    7 - Is there a game from a given year?\n\
+    Any other - quit\n")
     return file_name, var
 
 def change_filename():
@@ -40,7 +48,11 @@ def main():
             name=input("Game title?\n")
             print(get_line_number_by_title(file_name, name))
         elif choise == 5:
-            print(get_genres(file_name))
+            print(", ".join(get_genres("game_stat.txt")))
         elif choise == 6:
             print(when_was_top_sold_fps())
+        elif choise == 7:
+            year = input("What Year?")
+            print(decide(file_name, year))
+
 main()
