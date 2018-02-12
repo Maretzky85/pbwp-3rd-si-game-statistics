@@ -93,8 +93,16 @@ def get_game(file_name, title):
         if title==line["title"]:
             for entry in line:
                 prop=line[entry]
+                try:
+                    prop=int(prop)
+                except ValueError:
+                    try:
+                        prop=float(prop)
+                    except ValueError:
+                        prop=str(prop)    
                 properties_table.append(prop)
     return properties_table
+
 
 
 print(get_most_played("game_stat.txt"))
